@@ -1,0 +1,15 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.CombinatorialAspectsMatricesIncidenceHadamardFoundationCanonicalLaneLean.IncidenceMatrix
+import HautevilleHouse.CombinatorialAspectsMatricesIncidenceHadamardFoundationCanonicalLaneLean.FinalTheorem
+
+namespace HautevilleHouse
+namespace CombinatorialAspectsMatricesIncidenceHadamardFoundationCanonicalLaneLean
+
+def bridgeClosed (A : AdmissibleClass) : Prop :=
+  IncidenceMatrixClosed A.object.space
+
+theorem bridge_from_admissible_class (A : AdmissibleClass) : bridgeClosed A := by
+  exact A.object.conclusion
+
+end CombinatorialAspectsMatricesIncidenceHadamardFoundationCanonicalLaneLean
+end HautevilleHouse
